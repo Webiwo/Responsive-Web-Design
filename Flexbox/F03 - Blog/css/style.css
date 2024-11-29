@@ -11,6 +11,7 @@ body {
     font-family: 'Ubuntu', sans-serif;
     font-size: 1rem;
     font-weight: 300;
+    line-height: 1.5;
 }
 
 img {
@@ -51,6 +52,7 @@ a:focus {
     font-size: 1rem;
     font-weight: 800;
     text-transform: uppercase;
+    letter-spacing: .1em;
 }
 
 
@@ -69,7 +71,7 @@ a:focus {
 }
 
 .article-info {
-    font-size: .875rem;
+    font-size: .75em;
     margin: 2em 0 #023047;
     color: #166174;
     order: -2;
@@ -77,7 +79,7 @@ a:focus {
 }
 
 .article-body {
-    font-size: .875rem;
+    font-size: 1rem;
     margin: 1.5em 0;
 }
 
@@ -105,6 +107,7 @@ a:focus {
 
 .article-title {
     order: -1;
+    line-height: 1.2;
 }
 
 .article-next-info {
@@ -120,11 +123,12 @@ a:focus {
     font-weight: 800;
     text-decoration: none;
     text-transform: uppercase;
+    letter-spacing: .1em;
 }
 
 .article-more:hover,
 .article-more:focus {
-    letter-spacing: .125rem;
+    letter-spacing: .2em;
 }
 
 
@@ -138,7 +142,8 @@ a:focus {
 
 .widget-category {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
+    letter-spacing: .125em;
     text-transform: uppercase;
     margin: .5em 0 1em 0;
 }
@@ -147,6 +152,7 @@ a:focus {
     font-size: .875rem;
     text-align: justify;
     margin: 1em 0 1em 0;
+    line-height: 1.3;
 }
 
 .widget-recent-post {
@@ -164,6 +170,8 @@ a:focus {
 .recent-post-title {
     order: 2;
     margin-bottom: 1em;
+    font-size: 1em;
+    line-height: 1.2;
 }
 
 .widget-img {
@@ -222,13 +230,12 @@ nav ul {
     margin-right: 1em;
 }
 
-
-
 nav a {
     text-decoration: none;
     text-transform: uppercase;
     color: #e63946;
     font-weight: 800;
+    letter-spacing: .01em;
 }
 
 nav a:hover,
@@ -251,7 +258,15 @@ footer {
     background-color: #023047;
     color: white;
     text-align: center;
-    padding: 1.5em;
+    padding: 1.7em;
+    font-size: 1.2em;
+}
+
+footer p:last-of-type {
+    font-size: .75em;
+    color: rgba(255, 255, 255, 0.75);
+    text-transform: capitalize;
+    letter-spacing: 1.5;
 }
 
 
