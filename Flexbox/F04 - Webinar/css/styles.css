@@ -1,5 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1rem;
+    color: #404040;
+    text-align: center;
+}
+
+
+/* ========== Typography ==========  */
+
+h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.25em;
+    color: #fff;
+    margin: 2em 0;
+}
+
+h2 {
+    font-size: 1.3em;
+    margin-top: 2em;
+}
+
+strong {
+    font-weight: 800;
+}
+
+.date {
+    color: #fff;
+    letter-spacing: 2px;
+    order: 2
+}
+
+.orange-text {
+    color: #f18119;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.normal-font {
+    font-size: 1rem;
+}
+
+.small-font {
+    font-size: .5rem;
+    letter-spacing: 2px;
+}
+
+.big-font {
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.fine-print {
+    font-size: 0.65rem;
+    letter-spacing: 1px;
+}
+
+.top-text {
+    border-top: 5px solid #f18119;
+    border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;
+    padding-top: 2px;
+    order: -1;
+}
+
+/* ========== Poster & Content ==========  */
+
+.poster {
+    /*background-color: rgb(8, 31, 49);*/
+    background-image: url(../images/lang-poster.jpg), linear-gradient(45deg, rgb(154, 0, 0), blue);
+    background-size: cover;
+    background-position-y: -25px;
+    background-blend-mode: multiply;
+    padding: 0 .5rem 1.25em .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50vh;
+}
+
+.content p {
+    margin-bottom: 1.5em;
+    padding: 0 1.5em;
+}
+
+
+.poster>*,
+.content>* {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+
+
+/* ========== Form ==========  */
+
+.registration {
+    width: 80%;
+    max-width: 300px;
+}
+
+input,
+.btn {
+    width: 100%;
+    font: inherit;
+    text-align: inherit;
+    margin-bottom: .5em;
+    padding: .25em;
+    border: 1px solid #404040;
+    border-radius: 5px;
+}
+
+input {
+    transform: scale(1);
+    transition: transform 250ms;
+}
+
+input:focus {
+    transform: scale(1.1);
+}
+
+.btn {
+    display: inline-block;
+    padding: .75em .75em;
+    font-size: .6em;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn-submit {
+    background-image: linear-gradient(to left, #ff713b, #ffa51d);
+    color: white;
+    transform: scale(1);
+    transition: transform 250ms;
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+    transform: scale(1.1);
+
+}
+
+
+
+/* ========== Media Queries ==========  */
+
+@media (min-width: 650px) {
+    body {
+        font-size: 1.2em;
+        display: flex;
+    }
+
+    .poster,
+    .content {
+        width: 50%;
+        min-height: 100vh;
+    }
+
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .poster {
+        background-position-y: 0;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .normal-font {
+        font-size: 1.3rem;
+    }
+
+    .small-font {
+        font-size: .85rem;
+        letter-spacing: 2px;
+    }
+
+    .big-font {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+
+    .fine-print {
+        font-size: 0.7rem;
+        letter-spacing: 1px;
+    }
 }
