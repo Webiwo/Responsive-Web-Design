@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ========== Typography ==========  */
+
+
+.card-title {
+    color: #05cbe9;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    margin-bottom: 1em;
+}
+
+.card-body {
+    font-size: 1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.6;
+}
+
+.card-btn-read {
+    font-size: 1.25rem;
+}
+
+
+/* ========== Card ==========  */
+
+.card-img {
+    object-fit: cover;
+    object-position: top;
+    max-height: 30vh;
+}
+
+.card {
+    width: 95%;
+    margin: 0 auto;
+    background: #111d4a;
+    color: #fff;
+    font-family: "Blinker", sans-serif;
+    display: grid;
+}
+
+.card-time {
+    opacity: 0.6;
+    line-height: .9;
+}
+
+.card-time span {
+    font-weight: 700;
+    font-size: 1.3em;
+    display: block;
+}
+
+.card-btn {
+    font-size: 1.25rem;
+    background: #05cbe9;
+    color: #111d4a;
+    text-decoration: none;
+    font-weight: 700;
+    padding: .5em 1.25em;
+    letter-spacing: 1px;
+}
+
+@media (min-width: 768px) {
+    .card {
+        max-width: 1200px;
+    }
+
+    .card-img {
+        min-height: 50vh;
+    }
+
+    .card-title {
+        font-size: 1.8rem;
+    }
+
+    .card-body {
+        max-width: 700px;
+    }
+}
