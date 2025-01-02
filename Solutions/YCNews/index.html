@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>YC Hacker News</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <script src="//unpkg.com/navigo@6" defer></script>
+    <script src="app.js" type="module" defer></script>
+</head>
+
+<body>
+    <div id="app-container">
+        <div id="app-header">
+            <header class="header">
+                <span class="header-title">
+                    <i class="fa-brands fa-y-combinator fa-flip logo"></i>
+                    Hacker News
+                </span>
+                <nav>
+                    <a href="#/" class="header-link">Top</a>
+                    <a href="#/new" class="header-link">New</a>
+                    <a href="#/ask" class="header-link">Ask</a>
+                    <a href="#/show" class="header-link">Show</a>
+                    <a href="#/favorites" class="header-link">Favorites</a>
+                </nav>
+            </header>
+
+            <div id="route-container">
+                <div id="router-outlet"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
