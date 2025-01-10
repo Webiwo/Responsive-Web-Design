@@ -1,0 +1,44 @@
+.container {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.zone {
+    cursor: pointer;
+    font-size: 10em;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    transition: all 0.3s linear;
+}
+
+.zone:hover {
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px, inset rgba(0, 0, 0, 0.20) 0px -15px 20px;
+}
+
+.green {
+    background: linear-gradient(#56B870, #a5c956);
+    /*grid-column: span 2;
+    grid-row: span 2;*/
+}
+
+.red {
+    background: linear-gradient(#C655BE 10%, #cf0404 80%);
+}
+
+.yellow {
+    background: linear-gradient(#F3AAAA 20%, #febf04 100%);
+}
+
+.blue {
+    background: linear-gradient(#7abcff 30%, #60abf8 60%, #4096ee);
+}
+
+.purple {
+    background: linear-gradient(#A88BEB 0%, #F1A7F1 44%, #F8CEEC 100%);
+}
+
+.brown {
+    background: linear-gradient(#f6e6b4, #ed9017);
+}

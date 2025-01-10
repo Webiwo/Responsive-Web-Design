@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.zone {
+    color: #FFF;
+    font-size: 1.1rem;
+    border: 1px solid #bbb;
+    transition: all 0.3s linear;
+}
+
+.zone:hover {
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px, inset rgba(0, 0, 0, 0.20) 0px -15px 20px;
+}
+
+
+/* NAV */
+
+nav ul {
+    display: flex;
+    padding: 2rem 1.5rem;
+    text-transform: uppercase;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 0.75rem
+}
+
+.push {
+    margin-left: auto;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.green {
+    background: linear-gradient(#56B870, #a5c956);
+}
+
+
+/* COVER */
+
+.red {
+    background: linear-gradient(#C655BE 10%, #cf0404 80%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+
+/* GRID */
+
+.grid-wrapper {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(355px, 1fr));
+    ;
+}
+
+.blue {
+    background: linear-gradient(#7abcff 30%, #60abf8 60%, #4096ee);
+    /* display: grid;
+    grid-template-columns: repeat(4, minmax(75px, 1fr));
+    gap: 20px;*/
+    padding: 20px 20px;
+}
+
+.blue div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+}
+
+.box>img {
+    width: 100%;
+    padding: 50px 130px;
+    margin: 20px;
+}
+
+
+.yellow {
+    background: linear-gradient(#F3AAAA 20%, #febf04 100%);
+    text-align: center;
+    padding: 2rem 0;
+}
