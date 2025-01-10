@@ -10,7 +10,7 @@
 
 body {
     font-family: "News Cycle", serif;
-    font-size: 1rem;
+    font-size: 1rrem;
     font-weight: 400;
     color: #222;
 }
@@ -18,34 +18,166 @@ body {
 
 /* ========== Application ==========  */
 #app-container {
-    width: 85%;
-    margin: 0 auto;
+    width: 100%;
+}
+
+#app-header {
+    width: 100%;
+    background-color: #ff7b00;
 }
 
 .header {
-    background-color: #ff6600;
-    padding: .6rem 1rem;
+    max-width: 1200px;
+    margin: auto;
+    padding: .6rem 1.4em;
     color: #222;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
 .header-title {
     font-weight: 700;
-    color: black;
+    background-color: black;
+    color: #ff7b00;
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.3rem;
+    padding: .25rem 1rem;
+    border: 1px solid black;
 }
 
 .header-link {
     margin-left: 0.5rem;
     color: white;
     text-decoration: none;
+    text-shadow: tomato 2px 2px;
     letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.header-link:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+}
+
+.active {
+    border-bottom: 2px dashed white;
 }
 
 .logo {
-    font-size: 1.4em;
+    font-size: 1.4rem;
     color: #fff;
+    margin-right: .4rem;
+}
+
+
+/* ========== Stories ==========  */
+ol {
+    width: 90%;
+    max-width: 800px;
+    margin: 1rem auto;
+    padding-left: 1.5rem;
+}
+
+li {
+    padding: 0.5rem 1.5rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 7px;
+    background: #fffaee
+}
+
+::marker {
+    font-weight: 600;
+    color: #ff7b00;
+    font-size: 1.5rem;
+}
+
+.story-details {
+    font-size: .8rem;
+    background-color: #fceece;
+    padding-left: 1.35rem;
+}
+
+li a {
+    color: #181818;
+    text-decoration: none;
+}
+
+li a:visited {
+    color: #828282;
+    text-decoration: none;
+}
+
+
+
+/* ========== Comments ==========  */
+
+ul {
+    list-style: none;
+    max-width: 800px;
+    margin: 2rem auto 2rem auto;
+}
+
+.comment-header {
+    background-color: #eff1d9;
+    color: #626262;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.nested-comments-0 {
+    max-width: 1200px;
+    /*margin: 0 auto 1.5rem auto;*/
+    margin: 1.5rem;
+    background-color: #f8faee;
+    border: 1px solid #eff1d9;
+}
+
+.nested-comments-0 p {
+    margin: 0;
+    padding: .25rem 1.4rem;
+}
+
+.nested-comments-1,
+.nested-comments-2 {
+    margin: 1.2rem 0 .25rem 1.4rem;
+    background-color: #f8faee;
+    border: 1px solid #eff1d9;
+}
+
+pre {
+    margin: 1rem;
+    text-wrap: wrap;
+}
+
+
+/* ========== Messages ==========  */
+
+.error {
+    margin: 0.25rem 0;
+    padding: 1rem;
+    color: #ba3315;
+    background-color: #f9d0d0;
+    border: 1px solid #f5c6c6;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.error span {
+    margin-left: .5rem;
+}
+
+
+@media screen and (min-width: 1240px) {
+    .nested-comments-0 {
+        margin: 0 auto 1.5rem auto;
+    }
+
+    .header {
+        padding: .6rem 0;
+    }
 }
