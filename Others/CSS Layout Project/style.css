@@ -4,11 +4,12 @@
     box-sizing: border-box;
 }
 
+body {
+    color: #FFF;
+}
 
 .zone {
-    color: #FFF;
     font-size: 1.1rem;
-    border: 1px solid #bbb;
     transition: all 0.3s linear;
 }
 
@@ -21,7 +22,6 @@
 
 nav ul {
     display: flex;
-    padding: 2rem 1.5rem;
     text-transform: uppercase;
 }
 
@@ -40,7 +40,14 @@ nav a {
 }
 
 .green {
-    background: linear-gradient(#56B870, #a5c956);
+    background-color: #57cc99;
+    padding: 1.5rem;
+}
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 
@@ -58,8 +65,16 @@ nav a {
     justify-content: center;
     align-items: center;
     height: 50vh;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 2rem;
+
 }
 
+.cover {
+    width: 25rem;
+}
 
 /* GRID */
 
@@ -71,7 +86,7 @@ nav a {
 }
 
 .blue {
-    background: linear-gradient(#7abcff 30%, #60abf8 60%, #4096ee);
+    background: linear-gradient(#7abcff 30%, #669bbc 100%);
     padding: 20px;
 }
 
@@ -88,9 +103,17 @@ nav a {
     margin: 20px;
 }
 
+.box:hover {
+    transform: rotate(-3deg);
+}
 
-.yellow {
-    background: linear-gradient(#F3AAAA 20%, #febf04 100%);
+
+footer {
+    background-color: #d1fffd;
+    color: #404040;
     text-align: center;
-    padding: 2rem 0;
+    padding: 3rem 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
